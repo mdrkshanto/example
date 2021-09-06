@@ -20,7 +20,7 @@ class CategoryController extends Controller
     public function createAction(Request $request){
         $request->validate([
             'category_name' => 'required|alpha',
-            'category_description' => 'required|max:5',
+            // 'category_description' => 'required|max:5',
             'status' => 'required',
         ]);
 
